@@ -14,6 +14,10 @@ export default {
       store
     }
   },
+
+  // -Al caricamento della pagina, effettuate una chiama ajax all’API di Vite Yu Gi Oh
+  // Documentazione: https://ygoprodeck.com/api-guide/
+
   methods: {
     getElements() {
       axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=50&offset=').then((el) => {
